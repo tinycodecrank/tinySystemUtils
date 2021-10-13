@@ -10,9 +10,9 @@ import java.util.concurrent.TimeUnit;
 import java.util.function.Predicate;
 
 import de.tinycodecrank.collections.Stack;
+import de.tinycodecrank.concurrent.ThreadLocalExecutorService;
 import de.tinycodecrank.functions.bool_.BooleanBinaryOperator;
 import de.tinycodecrank.monads.Opt;
-import de.tinycodecrank.utils.concurrent.ThreadLocalExecutorService;
 
 public class FileSystemUtils
 {
