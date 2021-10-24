@@ -1,10 +1,10 @@
-package de.tinycodeccrank.autostart;
+package de.tinycodecrank.autostart;
 
 import java.io.File;
 
-import de.tinycodeccrank.io.FileSystemUtils;
-import de.tinycodeccrank.os.Platforms;
+import de.tinycodecrank.io.FileSystemUtils;
 import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.os.Platforms;
 
 public class AutoStartFactory
 {

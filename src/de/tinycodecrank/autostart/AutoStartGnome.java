@@ -1,14 +1,14 @@
-package de.tinycodeccrank.autostart;
+package de.tinycodecrank.autostart;
 
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-import de.tinycodeccrank.os.Platforms;
-import de.tinycodeccrank.shortcut.FreedesktopOrgShortcut;
-import de.tinycodeccrank.shortcut.FreedesktopOrgShortcut.LocalizableArgument;
 import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.os.Platforms;
+import de.tinycodecrank.shortcut.FreedesktopOrgShortcut;
+import de.tinycodecrank.shortcut.FreedesktopOrgShortcut.LocalizableArgument;
 
 public final class AutoStartGnome extends AutoStart
 {

@@ -1,4 +1,4 @@
-package de.tinycodeccrank.io;
+package de.tinycodecrank.io;
 
 import java.io.File;
 import java.nio.file.Files;

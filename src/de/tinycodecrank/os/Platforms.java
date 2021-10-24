@@ -1,4 +1,4 @@
-package de.tinycodeccrank.os;
+package de.tinycodecrank.os;
 
 import static java.io.File.*;
 

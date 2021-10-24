@@ -1,4 +1,4 @@
-package de.tinycodeccrank.autostart;
+package de.tinycodecrank.autostart;
 
 import java.io.File;
 import java.io.IOException;
