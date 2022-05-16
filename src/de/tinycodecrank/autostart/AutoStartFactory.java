@@ -22,27 +22,21 @@ public class AutoStartFactory
 	
 	public static Opt<AutoStart> get(String programName, String launchFileName, File runningJar)
 	{
-		switch (Platforms.getOS())
+		return switch (Platforms.getOS())
 		{
-			case WINDOWS:
-				return Opt.of(new AutoStartWin(programName, launchFileName, runningJar));
-			case LINUX:
-				return Opt.of(new AutoStartGnome(programName, launchFileName, runningJar));
-			default:
-				return Opt.empty();
-		}
+			case WINDOWS -> Opt.of(new AutoStartWin(programName, launchFileName, runningJar));
+			case LINUX -> Opt.of(new AutoStartGnome(programName, launchFileName, runningJar));
+			default -> Opt.empty();
+		};
 	}
 	
 	public static Opt<AutoStart> get(String programName, File launchFile, File runningJar)
 	{
-		switch (Platforms.getOS())
+		return switch (Platforms.getOS())
 		{
-			case WINDOWS:
-				return Opt.of(new AutoStartWin(programName, launchFile, runningJar));
-			case LINUX:
-				return Opt.of(new AutoStartGnome(programName, launchFile, runningJar));
-			default:
-				return Opt.empty();
-		}
+			case WINDOWS -> Opt.of(new AutoStartWin(programName, launchFile, runningJar));
+			case LINUX -> Opt.of(new AutoStartGnome(programName, launchFile, runningJar));
+			default -> Opt.empty();
+		};
 	}
 }

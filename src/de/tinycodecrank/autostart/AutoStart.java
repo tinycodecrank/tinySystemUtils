@@ -29,12 +29,13 @@ public abstract class AutoStart
 	
 	public abstract void write(Opt<String> vmArgs, Opt<String> programArgs) throws IOException;
 	
-	public final void remove()
+	public final boolean remove()
 	{
 		if (isPresent())
 		{
-			launchFile.delete();
+			return launchFile.delete();
 		}
+		return false;
 	}
 	
 	protected final Opt<File> getRunningJar()

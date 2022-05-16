@@ -1,6 +1,6 @@
 package de.tinycodecrank.os;
 
-import static java.io.File.*;
+import static java.io.File.separator;
 
 import java.io.File;
 import java.util.Locale;
@@ -14,18 +14,13 @@ public final class Platforms
 	
 	private static final String getAppDataForOs(OS os)
 	{
-		switch (os)
+		return switch (os)
 		{
-			case MAC_OS:
-				return System.getProperty("user.home") + separator + "Library" + separator + "Application Support";
-			case WINDOWS:
-				return System.getenv("APPDATA");
-			case LINUX:
-				return System.getProperty("user.home");
-			case OTHER:
-			default:
-				return System.getProperty("user.dir");
-		}
+			case MAC_OS -> System.getProperty("user.home") + separator + "Library" + separator + "Application Support";
+			case WINDOWS -> System.getenv("APPDATA");
+			case LINUX -> System.getProperty("user.home");
+			default -> System.getProperty("user.dir");
+		};
 	}
 	
 	public static OS getOS()
