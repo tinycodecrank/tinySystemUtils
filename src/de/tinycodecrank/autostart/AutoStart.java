@@ -3,7 +3,7 @@ package de.tinycodecrank.autostart;
 import java.io.File;
 import java.io.IOException;
 
-import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.monads.opt.Opt;
 
 public abstract class AutoStart
 {

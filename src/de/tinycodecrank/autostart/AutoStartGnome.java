@@ -5,7 +5,7 @@ import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.Scanner;
 
-import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.monads.opt.Opt;
 import de.tinycodecrank.os.Platforms;
 import de.tinycodecrank.shortcut.FreedesktopOrgShortcut;
 import de.tinycodecrank.shortcut.FreedesktopOrgShortcut.LocalizableArgument;

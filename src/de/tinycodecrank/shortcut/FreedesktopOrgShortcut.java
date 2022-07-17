@@ -7,9 +7,10 @@ import java.io.OutputStreamWriter;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.Map.Entry;
-import java.util.Objects;
 
-import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.monads.opt.Opt;
+
+import java.util.Objects;
 
 public final class FreedesktopOrgShortcut
 {

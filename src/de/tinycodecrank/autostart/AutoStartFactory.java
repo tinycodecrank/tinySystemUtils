@@ -3,7 +3,7 @@ package de.tinycodecrank.autostart;
 import java.io.File;
 
 import de.tinycodecrank.io.FileSystemUtils;
-import de.tinycodecrank.monads.Opt;
+import de.tinycodecrank.monads.opt.Opt;
 import de.tinycodecrank.os.Platforms;
 
 public class AutoStartFactory
