@@ -24,4 +24,3 @@ java version | library version | Download
 * [**tinyIterators.jar**](https://github.com/tinycodecrank/tinyIterators/releases/download/v1.0.0/tinyIterators.jar)
 * [**MathUtils.jar**](https://github.com/tinycodecrank/mathUtils/releases/download/v1.0.0/MathUtils.jar)
 * [**BoundedValues.jar**](https://github.com/tinycodecrank/BoundedValues/releases/download/v1.0.0/BoundedValues.jar)
-* [**tinyCollections.jar**](https://github.com/tinycodecrank/tinyCollections/releases/download/v1.0.0/tinyCollections.jar)
